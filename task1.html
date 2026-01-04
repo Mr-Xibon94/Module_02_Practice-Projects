@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline | Internal | External</title>
+    <link rel="shortcut icon" href="images/html5.png" type="image/x-icon">
+    <style>
+        /* its universal selector  */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* its the class name which is used in all 3 div  */
+
+        .txtstyle {
+            font-size: 18px;
+
+            font-style: italic;
+            text-align: justify;
+            padding: 15px;
+            margin: 20px;
+            border-radius: 20px;
+        }
+
+        /* its my inline div's id  */
+
+        #inlinebody {
+            background-color: lightgreen;
+            font-family: sans-serif;
+
+
+
+        }
+
+        /* its my Internal div's id  */
+
+        #internalbdy {
+            background-color: cyan;
+            font-family: cursive;
+        }
+
+        /* its my external div's id  */
+        #externalbdy {
+            background-color: rgb(255, 156, 139);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        #task1 {
+            background-color: wheat;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- its my header part of my webpage  -->
+    <header>
+        <!-- here I am applying Inline style  -->
+        <h1
+            style="text-align: center; color: black; background-color: rgb(235, 161, 161); margin: 20px; padding: 16px; font-size: 40px; border-radius: 20px;">
+            Inline | Internal | External
+        </h1>
+    </header>
+    <!-- its about inline css  -->
+    <div id="inlinebody" class="txtstyle">
+        <p>
+            <span style="font-weight: 700; font-size: 30px; text-decoration: underline; padding-right: 15px;">Inline
+                :</span> Inline CSS is a
+            method of styling HTML elements by writing CSS rules directly inside the HTML tag using the style attribute.
+            It allows developers to apply styles such as colors, fonts, spacing, and alignment to a single element
+            without affecting others. Inline CSS has the highest priority among all CSS types, meaning it overrides
+            internal and external stylesheets. This makes it useful for quick testing, debugging, or applying temporary
+            styles. However, excessive use of inline CSS can make code difficult to read and maintain. Therefore, it is
+            best used sparingly in small projects or specific situations.
+        </p>
+    </div>
+    <!-- Its about internal css  -->
+    <div id="internalbdy" class="txtstyle">
+        <p>
+            <span style="font-weight: 700; font-size: 30px; text-decoration: underline; padding-right: 15px;">Internal
+                :</span> Internal CSS is a method of styling web pages by writing CSS rules within the same HTML file
+            rather than in a separate stylesheet. It allows styles to be applied to multiple elements on a single page,
+            making the design more organized than inline styling. Internal CSS is useful when a webpage needs unique
+            styling that is not shared with other pages. It improves readability by keeping style rules in one place,
+            but it is not ideal for large websites because the styles cannot be reused across multiple pages, which can
+            make maintenance and updates more difficult.
+        </p>
+    </div>
+
+    <!-- Its about External css  -->
+    <div id="externalbdy" class="txtstyle">
+        <p>
+            <span style="font-weight: 700; font-size: 30px; text-decoration: underline; padding-right: 15px;">External
+                :</span> External CSS is a method of styling web pages by writing CSS rules in a separate file and
+            linking it to one or more HTML documents. This approach allows the same styles to be reused across multiple
+            pages, ensuring consistency in design and layout. External CSS makes the HTML code cleaner by separating
+            content from presentation, which improves readability and maintainability. It is especially useful for large
+            websites and projects where frequent design updates are required. By changing a single external stylesheet,
+            the appearance of an entire website can be updated efficiently and consistently.
+        </p>
+    </div>
+
+    <div id="task1" class="txtstyle">
+        <p>
+        <h3>Task-1 is completed. To check out Task-2 please <span style="padding-left: 10px;"><button><a
+                        href="tast2.html" target="_blank">Click
+                        here..</a></button></span></h3>
+        </p>
+    </div>
+</body>
+
+</html>
