@@ -22,3 +22,15 @@
 .alnmnt p {
     text-align: center;
 }
+
+.fntsz p {
+    font-size: larger;
+}
+
+.fntfmly p {
+    font-family: cursive;
+}
+
+.fntstyle p {
+    font-style: italic;
+}
