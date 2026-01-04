@@ -14,3 +14,11 @@
 
 
 }
+
+.txtclr p {
+    color: blue;
+}
+
+.alnmnt p {
+    text-align: center;
+}
